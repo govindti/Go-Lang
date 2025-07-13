@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -37,11 +36,19 @@ func main() {
 	// 	fmt.Println("It's Weekday")
 	// }
 
-
 	// type switch
-	whomI := func (i interface{})  {
-		switch i:= i.(type) {
-			
+	whomI := func(i interface{}) {
+		switch t := i.(type) {
+		case int:
+			fmt.Println("Its an Integer Type")
+		case string:
+			fmt.Println("Its an String Type")
+		case bool:
+			fmt.Println("Its an Bool Type")
+		default:
+			fmt.Println("Other", t)
 		}
 	}
+
+	whomI("Govind")
 }
