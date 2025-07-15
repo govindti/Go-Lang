@@ -28,10 +28,17 @@ func main() {
 	// }
 
 	// in range
-	for i:= range 50 {
-		fmt.Println(i)
+	// for i:= range 50 {
+	// 	fmt.Println(i)
+	// }
+
+	// range
+	nums := []int{6, 7, 8}
+
+	sum := 0
+	for _, num := range nums {
+		sum = sum + num
 	}
-
-
+	fmt.Println(sum)
 
 }

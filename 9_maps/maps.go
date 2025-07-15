@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"maps"
-)
+import "fmt"
 
 // maps => js obj, python dic., has maps
 func main() {
@@ -37,8 +34,28 @@ func main() {
 	// 	fmt.Println("Not OK")
 	// }
 
-	p1 := map[string]int{"price": 50, "phone": 3}
-	p2 := map[string]int{"price": 50, "phone": 8}
-	fmt.Println(maps.Equal(p1, p2))
+	// p1 := map[string]int{"price": 50, "phone": 3}
+	// p2 := map[string]int{"price": 50, "phone": 8}
+	// fmt.Println(maps.Equal(p1, p2))
+
+	// m := map[string]string{"fname": "Govind", "lname": "Tiwari"}
+
+	// // for k, val := range m {
+	// // 	fmt.Println(k,val)
+	// // }
+
+	// // if u didn't give second return then it retutn key not value
+	// for k := range m {
+	// 	fmt.Println(k)
+	// }
+
+	// in strings
+	for i, c := range "Govind" {
+
+		// unicode code point rune
+		// i mean starting byte of rune
+		// fmt.Println(i, c)
+		fmt.Println(i, string(c))
+	}
 
 }
