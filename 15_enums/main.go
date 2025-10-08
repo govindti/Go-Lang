@@ -25,5 +25,5 @@ func changeOrderStatus(status OrderStatus) {
 }
 
 func main() {
-	changeOrderStatus(Prepared)
+	changeOrderStatus(Delivered)
 }
