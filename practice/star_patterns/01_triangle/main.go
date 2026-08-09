@@ -18,5 +18,13 @@ func main() {
 //	****
 //	*****
 func Triangle(n int) []string {
-	return nil
+	result := []string{}
+	for i := 1; i <= n; i++ {
+		row := ""
+		for j := 1; j <= i; j++ {
+			row += "*"
+		}
+		result = append(result, row)
+	}
+	return result
 }
